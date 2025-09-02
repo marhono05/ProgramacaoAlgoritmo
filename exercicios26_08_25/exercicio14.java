@@ -6,32 +6,33 @@ public class exercicio14 {
         
         Scanner ler = new Scanner(System.in);
 
-        int totaleleitores, brancos, nulos, validos;
-        double porcbrancos, porcnulos, porcvalidos;
+        double porcbrancos, porcnulos, porcvalidos, totalvotos, brancos, nulos, validos;
 
-        System.out.println("Digite o número de eleitores");
+        System.out.println("Digite o número de votos");
 
-        totaleleitores = ler.nextInt();
+        totalvotos = ler.nextDouble();
 
         System.out.println("Digite o número de votos brancos");
 
-        brancos = ler.nextInt();
+        brancos = ler.nextDouble();
 
         System.out.println("Digite o número de votos nulos");
 
-        nulos = ler.nextInt();
+        nulos = ler.nextDouble();
 
         System.out.println("Digite o valor de votos válidos");
 
-        validos = ler.nextInt();
+        validos = ler.nextDouble();
 
-        porcbrancos = totaleleitores * (brancos / 100);
+        porcbrancos = brancos/totalvotos * 100;
 
-        porcnulos = totaleleitores * (nulos / 100);
+        porcnulos = nulos/totalvotos * 100;
 
-        porcvalidos = totaleleitores * (validos / 100);
+        porcvalidos = validos/totalvotos * 100;
 
-        System.out.println("O número de eleitores é " + totaleleitores + " o número de votos brancos é de " + porcbrancos);
+        System.out.println("Foram registrados " + totalvotos + " votos e " + porcbrancos + "% de votos brancos, " + porcnulos + "% de votos nulos, " + porcvalidos + "% de votos válidos.");
+
+    
         
 
         
