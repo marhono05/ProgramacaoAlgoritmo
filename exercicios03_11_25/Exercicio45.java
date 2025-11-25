@@ -8,16 +8,15 @@ public class Exercicio45 {
         
         Scanner ler = new Scanner(System.in);
 
-        int quantidade;
-        double soma = 0;
-        int numero;
+        int i, numero;
+        double media = 0, soma = 0;
         
+        for(i=0; i<=9; i++) { 
+        System.out.println("Digite o " + (i + 1) + ("° número."));
+        numero = ler.nextInt();
+         soma = soma + numero;}
 
-
-        for(quantidade=1; quantidade<=10; quantidade++) { System.out.println("Digite 10 números"); numero = ler.nextInt();
-        soma = soma + numero; }
-
-        double media = soma / 10;
+        media = soma / 10;
         
         System.out.println("A soma de todos os números é " + soma);
         System.out.println("A média aritmética é de " + media);
