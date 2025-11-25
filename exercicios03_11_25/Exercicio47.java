@@ -8,7 +8,7 @@ public class Exercicio47 { // Um programa que conte quantos números são ímpar
         
         Scanner ler = new Scanner(System.in);
 
-        int numero, impar = 0, par = 0; // Sempre que usar eles para qualquer cálculo, definiar a variável para 0
+        int numero, impar = 0, par = 0; // Sempre que usar eles para qualquer cálculo, definir a variável para 0
         for(int i=0; i<=9; i++ ){
             System.out.println("Digite o " + (i + 1) + ("° número."));
             numero = ler.nextInt();
